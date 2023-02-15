@@ -9,12 +9,16 @@ function App() {
     setNewTask(e.target.value);
   };
 
+  const addTask = () => {
+    setTodoList([...todoList, newTask]);
+  };
+
   return (
     <div className="App">
       <h1>ToDoList</h1>
       <div className="addTask">
         <input placeholder="Digite o nome da tarefa" onChange={getInput} />
-        <button>Adicionar Tarefa</button>
+        <button onClick={addTask}>Adicionar Tarefa</button>
       </div>
       <div className="items"></div>
     </div>
