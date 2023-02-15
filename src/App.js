@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
-  const [inputVal, setInputVal] = useState("");
+  const [addTask, setAddTask] = useState("");
 
   return (
     <div className="App">
