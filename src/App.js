@@ -22,7 +22,12 @@ function App() {
       </div>
       <div className="items">
         {todoList.map((item) => {
-          return <h1>{item}</h1>;
+          return (
+            <div>
+              <h1>{item}</h1>
+              <button> X </button>
+            </div>
+          );
         })}
       </div>
     </div>
