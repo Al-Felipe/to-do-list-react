@@ -13,6 +13,10 @@ function App() {
     setTodoList([...todoList, newTask]);
   };
 
+  const removeTask = (itemName) => {
+    setTodoList(todoList.filter((item) => item !== itemName));
+  };
+
   return (
     <div className="App">
       <h1>ToDoList</h1>
@@ -25,7 +29,7 @@ function App() {
           return (
             <div>
               <h1>{item}</h1>
-              <button> X </button>
+              <button onClick={() => removeTask(item)}> X </button>
             </div>
           );
         })}
