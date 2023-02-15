@@ -3,10 +3,10 @@ import "./App.css";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
-  const [addTask, setAddTask] = useState("");
+  const [newTask, setNewTask] = useState("");
 
   const getInput = (e) => {
-    setAddTask(e.target.value);
+    setNewTask(e.target.value);
   };
 
   return (
