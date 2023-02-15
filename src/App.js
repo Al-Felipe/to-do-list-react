@@ -20,7 +20,11 @@ function App() {
         <input placeholder="Digite o nome da tarefa" onChange={getInput} />
         <button onClick={addTask}>Adicionar Tarefa</button>
       </div>
-      <div className="items"></div>
+      <div className="items">
+        {todoList.map((item) => {
+          return <h1>{item}</h1>;
+        })}
+      </div>
     </div>
   );
 }
