@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [todoList, setTodoList] = useState([]);
+  const [inputVal, setInputVal] = useState("");
+
   return (
     <div className="App">
       <h1>ToDoList</h1>
